@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/screen"
+    android:gravity="center_vertical"
+    tools:context=".Sign_up">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/emoji"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bros"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginTop="-10dp"
+        android:textColor="@color/Background" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="25sp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editsgnusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="15sp"
+        android:hint="Username / Profile Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editsgnemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:inputType="textPersonName"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/editcnfPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/Background"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:text="SIGN UP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25sp"
+            android:text="Already have an Account! "/>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Background"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="LOGIN"/>
+
+
+</LinearLayout>

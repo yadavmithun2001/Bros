@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/dialog_pfimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/dialog_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:text="Name" />
+</RelativeLayout>

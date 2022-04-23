@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rtout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/Title"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15sp"
+            android:elevation="10dp"
+            android:gravity="center_vertical"
+            android:text="Bros"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/title"
+            app:srcCompat="@drawable/emoji" />
+
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/more"
+            app:srcCompat="@drawable/ic_baseline_search_24" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtout"
+        android:background="@color/Title"
+        android:elevation="10dp"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#E8DBEA">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHATS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALLS" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout"
+        android:background="@color/screen" />
+
+    <ImageView
+        android:id="@+id/postimage"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16sp"
+        android:layout_marginBottom="16sp"
+        android:elevation="15sp"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <ImageView
+        android:id="@+id/allusers"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="@drawable/circular_background"
+        android:elevation="15sp"
+        app:srcCompat="@drawable/ic_baseline_supervised_user_circle_24" />
+
+
+
+
+
+
+</RelativeLayout>

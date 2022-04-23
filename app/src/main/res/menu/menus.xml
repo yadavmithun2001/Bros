@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profile"
+        android:title="Profile" />
+    <item android:id="@+id/newgroup"
+        android:title="New Group" />
+    <item android:id="@+id/linked"
+        android:title="Linked Device" />
+    <item android:id="@+id/starred"
+        android:title="Starred Message" />
+    <item android:id="@+id/setting"
+        android:title="Settings" />
+    <item android:id="@+id/logout"
+        android:title="Logout" />
+
+</menu>
